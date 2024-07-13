@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Informações da Receita - Receitas Deliciosas</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link
+            rel="stylesheet"
+            href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="/css/aboutStyle.css"
+            type="text/css"
+            media="all"
+        />
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <span id="recipeTitle" class="mdl-layout-title"
+                    >Receitas Deliciosas</span
+                >
+            </header>
+            <main  class="mdl-layout__content">
+                <div class="mdl-layout__tab-panel is-active" id="overview">
+                    <section
+                        class="section--center mdl-grid mdl-grid--no-spacing"
+                    >
+                        <div
+                            class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp recipe-card"
+                        >
+
+                            <div class="mdl-card__supporting-text">
+                                <img
+                                    id="recipeImage"
+                                    src=""
+                                    alt="Imagem da Receita"
+                                    class="recipe-image"
+                                />
+                                <div id="recipeDetails">
+                                    <h3>Modo de Preparo:</h3>
+                                    <p id="recipePreparation">
+                                        Descrição do modo de preparo aqui...
+                                    </p>
+                                    <hr />
+                                    <h3>Ingredientes:</h3>
+                                    <p id="recipeIngredients">
+                                        Ingredientes aqui...
+                                    </p>
+
+                                    <i
+                                        id="noRecipeIcon"
+                                        class="material-icons hidden"
+                                        >error_outline</i
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <script
+            src="/js/about.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+    </body>
+</html>

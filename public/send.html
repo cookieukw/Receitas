@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Enviar Receita - Receitas Deliciosas</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link
+            rel="stylesheet"
+            href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+        />
+
+        <script
+            defer
+            src="https://code.getmdl.io/1.3.0/material.min.js"
+        ></script>
+        <link rel="stylesheet" href="/css/sendStyle.css" />
+    </head>
+    <body>
+        <div class="form-container">
+            <h2>Enviar Receita</h2>
+            <form id="recipe-form" enctype="multipart/form-data">
+                <div class="mdl-textfield mdl-js-textfield form-input">
+                    <input
+                        class="mdl-textfield__input"
+                        type="text"
+                        id="title"
+                        name="title"
+                    />
+                    <label class="mdl-textfield__label" for="title"
+                        >Título da Receita</label
+                    >
+                </div>
+                <div class="mdl-textfield mdl-js-textfield form-input">
+                    <textarea
+                        class="mdl-textfield__input form-textarea"
+                        id="ingredients"
+                        name="ingredients"
+                    ></textarea>
+                    <label class="mdl-textfield__label" for="ingredients"
+                        >Ingredientes</label
+                    >
+                </div>
+                <div class="mdl-textfield mdl-js-textfield form-input">
+                    <textarea
+                        class="mdl-textfield__input form-textarea"
+                        id="preparation"
+                        name="preparation"
+                    ></textarea>
+                    <label class="mdl-textfield__label" for="preparation"
+                        >Modo de Preparo</label
+                    >
+                </div>
+                <div class="mdl-textfield mdl-js-textfield form-input">
+                    <textarea
+                        class="mdl-textfield__input form-textarea"
+                        id="imageUrl"
+                        name="imageUrl"
+                    ></textarea>
+                    <label class="mdl-textfield__label" for="imageUrl"
+                        >URL da imagem</label
+                    >
+                </div>
+                <button type="button" class="form-submit" id="submitRecipe">
+                    Enviar Receita
+                </button>
+            </form>
+        </div>
+        <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+        <script>
+            eruda.init();
+        </script>
+        <script
+            src="/js/send.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPR html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Receitas Deliciosas - Explore Nossas Delícias</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link
+            rel="stylesheet"
+            href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./css/indexStyle.css"
+            type="text/css"
+            media="all"
+        />
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <span class="mdl-layout-title">Receitas Deliciosas</span>
+            </header>
+            <main class="mdl-layout__content">
+                <div id="recipes-container" class="mdl-list">
+                    <!-- Os dados das receitas serão preenchidos dinamicamente aqui -->
+                </div>
+            </main>
+        </div>
+
+        <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+        <script>
+            eruda.init();
+        </script>
+        <script
+            src="/js/index.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+    </body>
+</html>
